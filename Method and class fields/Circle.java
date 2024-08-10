@@ -19,8 +19,7 @@ public class Circle {
 		if (radius <=0) {
 			System.out.println("Radius is allways > 0");
 		}
-		else this.radius = radius;
-		
+		else this.radius = radius;	
 	}
 
 	public double getArea() {
