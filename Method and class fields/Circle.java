@@ -16,13 +16,14 @@ public class Circle {
 	}
 
 	public void setRadius(double radius) {
-		if (radius <=0)
-		this.radius = radius;
+		if (radius <=0) {
+			System.err.println("Radius is allways > 0");
+		}
+		else this.radius = radius;
+		
 	}
 
 	public double getArea() {
 	return Math.PI * radius * radius;
 	}
-	
-
 }
