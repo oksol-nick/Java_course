@@ -17,7 +17,7 @@ public class Circle {
 
 	public void setRadius(double radius) {
 		if (radius <=0) {
-			System.err.println("Radius is allways > 0");
+			System.out.println("Radius is allways > 0");
 		}
 		else this.radius = radius;
 		
