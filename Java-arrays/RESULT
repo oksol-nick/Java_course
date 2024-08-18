@@ -1,0 +1,38 @@
+/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=52827:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /Users/nikolai/Documents/JAVA_course/java-arrays/out/production/java-arrays Matrices
+Нулевой вектор длины 3: [0, 0, 0]
+Вектор A: [1, 2, 3]
+Вектор B: [4, 5, 6]
+Сумма векторов A и B: [5, 7, 9]
+Разность векторов A и B: [-3, -3, -3]
+Скалярное произведение векторов A и B: 32
+Умножение вектора A на скаляр 2: [2, 4, 6]
+Длина (норма) вектора A: 3.7416573867739413
+Matrix A:
+1 2
+3 4
+Matrix B:
+2 0
+1 2
+Matrix A + B:
+3 2
+4 6
+Matrix A - B:
+-1 2
+ 2 2
+Matrix A * B:
+ 4 4
+10 8
+Matrix A * 3:
+3  6
+9 12
+Matrix A Transpose:
+1 3
+2 4
+Matrix H:
+4 3 2
+1 3 1
+2 1 4
+Determinant of Matrix H:
+28
+
+Process finished with exit code 0
