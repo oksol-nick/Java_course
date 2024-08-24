@@ -1,15 +1,15 @@
-"H:\Program Files\Java\jdk-22\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\lib\idea_rt.jar=28177:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath H:\JAVA_couse\HW_014\Collections\out\production\Collections Collections
+"H:\Program Files\Java\jdk-22\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\lib\idea_rt.jar=31571:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath H:\JAVA_couse\HW_014\Collections\out\production\Collections Collections
 Задание 1.
    До: {Карандаш=77, Солнце=1529, Банан=1}
 После: {1=Банан, 1529=Солнце, 77=Карандаш}
 
 Задание 2.
 [Коллекция, Время, мкс]
-[ArrayList, 360]
-[LinkedList, 533275]
+[ArrayList, 452]
+[LinkedList, 508116]
 
 Задание 3
    До: [Банан, Карандаш, Солнце, Суджук, Карандаш, Терем, Банан, Терем, Банан, Банан, Банан, Банан, Банан, Банан]
-После: [Банан, Карандаш, Солнце, Суджук, Терем, Банан, Банан]
+После: [Банан, Карандаш, Солнце, Суджук, Терем]
 
 Process finished with exit code 0
