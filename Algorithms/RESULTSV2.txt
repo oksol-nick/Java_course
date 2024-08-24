@@ -1,0 +1,16 @@
+"H:\Program Files\Java\jdk-22\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\lib\idea_rt.jar=17707:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath H:\JAVA_couse\HW_013\Sorting\out\production\Sorting MainV2
+[     Метод сортировки, N,     Время, нс]
+[         Arrays.sort(), 1000, 4360800]
+[         Arrays.sort(), 10000, 5743400]
+[         Arrays.sort(), 100000, 10610800]
+[Пузырьковая сортировка, 1000, 15753600]
+[Пузырьковая сортировка, 10000, 209349600]
+[Пузырьковая сортировка, 100000, 14438550700]
+[  Сортировка вставками, 1000, 4874700]
+[  Сортировка вставками, 10000, 33981900]
+[  Сортировка вставками, 100000, 2597334700]
+[    Сортировка выбором, 1000, 5895400]
+[    Сортировка выбором, 10000, 57858600]
+[    Сортировка выбором, 100000, 2456843200]
+
+Process finished with exit code 0
