@@ -93,6 +93,7 @@ public class Collections {
                //System.out.println(checkedList.get(i).equals(checkedList.get(j)));
                if(checkedList.get(i).equals(checkedList.get(j))){
                    checkedList.remove(j);
+                   j = j-1;
                }
            }
        }
