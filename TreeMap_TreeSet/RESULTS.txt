@@ -1,0 +1,4 @@
+"H:\Program Files\Java\jdk-22\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\lib\idea_rt.jar=23162:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath H:\JAVA_couse\HW_017\StudentsResults\out\production\StudentsResults ResultsBoard
+[Мария Швецова : 4.7, Ольга Цветкова : 4.4, Людмила Колонкова : 4.3]
+
+Process finished with exit code 0
