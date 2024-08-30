@@ -1,0 +1,9 @@
+"H:\Program Files\Java\jdk-22\bin\java.exe" --enable-preview "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\lib\idea_rt.jar=29443:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath H:\JAVA_couse\HW_018\StreamHW\out\production\StreamHW Main
+Уникальные элементы списка:
+[Мария Швецова, Денис Кораблёв, Ольга Цветкова, Фёдор Курочкин]
+
+Количество строк в списке, начинающихся с буквы М: 2
+
+Второе максимальное значение равно: 241
+
+Process finished with exit code 0
