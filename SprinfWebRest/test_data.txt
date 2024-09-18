@@ -1,0 +1,10 @@
+curl -X POST localhost:8080/contacts?name=Marija+Shvetsova^&phoneNumber=70987654321^&email=MarijaShvetsova@pochta.ogr | json_pp
+
+curl -X POST localhost:8080/contacts?name=Denis+Korablev^&phoneNumber=71234567890^&email=DenisKorablev@pochta.ogr | json_pp
+
+
+curl -X PUT  localhost:8080/contacts/1 -H "Content-Type: application/json"  --data "{\"newName\":\"Marija+Luganskaja\", \"newPhoneNumber\":\"70987654321\", \"newEmail\":\"MarijaLuganskaja@pochta.ogr\"}"  | json_pp
+
+curl localhost:8080/contacts/1  | json_pp
+
+curl localhost:8080/contacts  | json_pp
