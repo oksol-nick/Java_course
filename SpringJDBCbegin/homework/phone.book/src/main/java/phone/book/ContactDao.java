@@ -17,7 +17,7 @@ public class ContactDao {
         this.namedJdbcTemplate = namedJdbcTemplate;
     }
 
-    public PersonContact addContact(String name, String surname, String email, String phoneNumber) {
+    public PersonContact addContact(String name, String surname, String phoneNumber, String email) {
 
         long id;
         long maxId = namedJdbcTemplate.query("SELECT MAX(ID) FROM CONTACT", (rs, i) -> rs.getLong("MAX")).getFirst();
