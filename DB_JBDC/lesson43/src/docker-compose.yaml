@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  postgres:
+    image: 'postgres'
+    container_name: 'my_java-postgres'
+    ports:
+      - 5432:5432
+    environment:
+      - 'POSTGRES_USER=user'
+      - 'POSTGRES_PASSWORD=password'
+      - 'POSTGRES_HOST_AUTH_METHOD=trust'
+      - 'POSTGRES_DB=productStar'
