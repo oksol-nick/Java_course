@@ -161,7 +161,7 @@ Repository {
 
     public List<Map<String, Object>> getTop10WalkingUsersFromDb() {
        return jdbcTemplate. queryForList(
-               "select user_login from walks group by user_login having count(*) > 0 order by count(*) desc limit 10");
+               "select user_login from walks group by user_login having count(*) >= 10 order by count(*) desc limit 10");
     }
 
 
