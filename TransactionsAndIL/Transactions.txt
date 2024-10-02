@@ -1,0 +1,49 @@
+--BEGIN TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+--BEGIN TRANSACTION ISOLATION LEVEL READ COMMITTED;
+--BEGIN TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+
+DO $$
+DECLARE 
+	ClientID INT := 1;
+	TransType VARCHAR(20) := 'Deposit';
+	TransferAmount DECIMAL(10, 2) := 500.00;
+BEGIN
+	UPDATE Accounts
+	SET Balance =
+		(CASE TransType WHEN 'Deposit' THEN
+	 		(SELECT Balance FROM Accounts WHERE AccountID = ClientID) + TransferAmount
+		ELSE
+			(SELECT Balance FROM Accounts WHERE AccountID = ClientID) - TransferAmount
+		END)
+	WHERE AccountID = ClientID;
+
+ 	INSERT INTO Transactions (AccountID, TransactionType, Amount)
+ 	VALUES (ClientID, TransType, TransferAmount);
+END
+$$;
+COMMIT;
+
+--BEGIN TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+--BEGIN TRANSACTION ISOLATION LEVEL READ COMMITTED;
+--BEGIN TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+
+DO $$
+DECLARE 
+	ClientID INT := 2;
+	TransType VARCHAR(20) := 'Withdrawal';
+	TransferAmount DECIMAL(10, 2) := 300.00;
+BEGIN
+	UPDATE Accounts
+	SET Balance =
+		(CASE TransType WHEN 'Deposit' THEN
+	 		(SELECT Balance FROM Accounts WHERE AccountID = ClientID) + TransferAmount
+		ELSE
+			(SELECT Balance FROM Accounts WHERE AccountID = ClientID) - TransferAmount
+		END)
+	WHERE AccountID = ClientID;
+
+ 	INSERT INTO Transactions (AccountID, TransactionType, Amount)
+ 	VALUES (ClientID, TransType, TransferAmount);
+END
+$$;
+COMMIT;
