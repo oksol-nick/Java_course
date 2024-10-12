@@ -30,11 +30,11 @@ public class Main {
 
     public static int distanceCostSelector(double distance) {
         int result = 0;
-        int[] ages = {2, 10, 30};
+        int[] edges = {2, 10, 30};
         int[] rate = {50, 100, 200, 300};
 
-        for(int i = 0; i < ages.length; i++) {
-            if(distance <= ages[i]) {
+        for(int i = 0; i < edges.length; i++) {
+            if(distance <= edges[i]) {
                 result = rate[i];
                 break;
             } else {result = rate[rate.length-1];};
